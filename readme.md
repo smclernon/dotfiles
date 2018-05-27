@@ -1,3 +1,7 @@
+# Shaun's Dotfiles
+
+This repository is forked from [Dries Vint](https://github.com/driesvints/dotfiles)
+
 # Dries's Dotfiles
 
 ## What Is This?

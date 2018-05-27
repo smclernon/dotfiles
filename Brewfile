@@ -4,8 +4,8 @@ tap 'caskroom/eid'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'homebrew/php'
+tap 'garethr/kubeval'
+tap 'dtan4/dtan4'
 
 # Install ZSH
 brew 'zsh'
@@ -21,55 +21,59 @@ brew 'findutils'
 brew 'bash'
 
 # Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
+#brew 'homebrew/dupes/grep'
 
 # Install Binaries
+brew 'adr-tools'
+brew 'antigen'
 brew 'awscli'
 brew 'git'
+brew 'go'
+brew 'httpie'
 brew 'hub'
-brew 'tree'
+brew 'graphviz'
+brew 'kubectx'
+brew 'kube-ps1'
 brew 'mackup'
 brew 'mas'
 brew 'node'
+brew 'python2'
+brew 'tig'
 brew 'trash'
+brew 'tree'
+brew 'yarn'
 brew 'wget'
 
 # Development
-brew 'php72'
-brew 'php72-intl'
-brew 'php72-imagick'
-brew 'mysql'
+brew 'kubectl'
+brew 'kubectx'
+brew 'kubeval'
+brew 'k8sec'
+brew 'packer'
+brew 'terraform'
+brew 'watch'
 
 # Apps
-cask 'aerial'
-cask 'alfred'
 cask 'caffeine'
-cask 'docker'
+cask 'docker-edge'
 cask 'eid-be'
 cask 'eid-be-viewer'
 cask 'firefox'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'gpgtools'
+cask 'intellij-idea'
 cask 'insomnia'
 cask 'iterm2'
 cask 'java'
-cask 'mysqlworkbench'
-cask 'now'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
+cask 'minikube'
 cask 'shuttle'
 cask 'slack'
-cask 'sublime-text'
-cask 'torbrowser'
-cask 'tower'
-cask 'transmit'
+cask 'sourcetree'
+cask 'spectacle'
 cask 'vagrant'
+cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
-cask 'vlc'
-cask 'zoomus'
+cask 'visual-studio-code'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -85,15 +89,15 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Spark', id: 1176895641
-mas 'Things', id: 904280696
-mas 'Tweetbot', id: 557168941
-mas 'Unsplash Wallpapers', id: 1284863847
+#mas '1Password', id: 443987910
+#mas 'Byword', id: 420212497
+#mas 'Deckset', id: 847496013
+#mas 'Gapplin', id: 768053424
+#mas 'Giphy Capture', id: 668208984
+#mas 'Paw', id: 584653203
+#mas 'Sip', id: 507257563
+#mas 'Sketch', id: 402476602
+#mas 'Spark', id: 1176895641
+#mas 'Things', id: 904280696
+#mas 'Tweetbot', id: 557168941
+#mas 'Unsplash Wallpapers', id: 1284863847

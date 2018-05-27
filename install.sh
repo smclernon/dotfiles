@@ -1,5 +1,6 @@
 #!/bin/sh
-
+#set -x
+set -e
 echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
@@ -14,28 +15,35 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+echo "Install SDKMAN..."
+curl -fsSL https://get.sdkman.io | bash
+
+echo "Install PIP et al..."
+sudo easy_install pip
+pip install virtualenv
+
+echo "Install Go..."
+mkdir $HOME/Go
+mkdir -p $home/Go/src/github.com/smclernon
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" > /dev/null
+
+cp zshrc ~/.zshrc
+source ~/.zshrc
+
+# Config antigen
+curl -L git.io/antigen > $HOME/antigen.zsh
+
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/spark-installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Install global NPM packages
-npm install --global yarn
-
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+mkdir -p $HOME/Sites
 
 # Symlink the Mackup config file to the home directory
-ln -s ./.mackup.cfg $HOME/.mackup.cfg
+#ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
