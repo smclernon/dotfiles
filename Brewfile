@@ -73,8 +73,6 @@ cask 'caffeine'
 cask 'docker-edge'
 cask 'eid-be'
 cask 'eid-be-viewer'
-cask 'firefox'
-cask 'google-chrome'
 cask 'intellij-idea'
 cask 'insomnia'
 cask 'iterm2'
@@ -89,6 +87,11 @@ cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
+
+# Browsers
+cask 'brave-browser'
+cask 'firefox'
+cask 'google-chrome'
 
 # Quicklook
 cask 'qlcolorcode'
