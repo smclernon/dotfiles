@@ -9,6 +9,7 @@ tap 'dtan4/dtan4'
 tap 'farmotive/k8s'
 tap 'caskroom/fonts'
 tap 'txn2/tap'
+tap 'wagoodman/dive'
 
 # Install ZSH
 brew 'zsh'
