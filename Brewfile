@@ -6,6 +6,9 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'garethr/kubeval'
 tap 'dtan4/dtan4'
+tap 'farmotive/k8s'
+tap 'caskroom/fonts'
+tap 'txn2/tap'
 
 # Install ZSH
 brew 'zsh'
@@ -27,13 +30,12 @@ brew 'bash'
 brew 'adr-tools'
 brew 'antigen'
 brew 'awscli'
+brew 'fzf'
 brew 'git'
 brew 'go'
 brew 'httpie'
 brew 'hub'
 brew 'graphviz'
-brew 'kubectx'
-brew 'kube-ps1'
 brew 'mackup'
 brew 'mas'
 brew 'node'
@@ -45,13 +47,25 @@ brew 'yarn'
 brew 'wget'
 
 # Development
-brew 'kubectl'
-brew 'kubectx'
-brew 'kubeval'
-brew 'k8sec'
 brew 'packer'
 brew 'terraform'
 brew 'watch'
+
+# docker utils
+brew 'dive'
+ 
+# k8s utils
+brew 'kubectl'
+brew 'kubectx'
+brew 'kubefwd'
+brew 'kube-ps1'
+brew 'kubeval'
+brew 'k8sec'
+brew 'kpoof'
+brew 'klog'
+brew 'kex'
+brew 'kud'
+brew 'kubernetes-helm'
 
 # Apps
 cask 'caffeine'
@@ -87,6 +101,7 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-hack-nerd-font'
 
 # Install Mac App Store apps
 #mas '1Password', id: 443987910

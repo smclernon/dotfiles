@@ -2,8 +2,6 @@
 
 This repository is forked from [Dries Vint](https://github.com/driesvints/dotfiles)
 
-# Dries's Dotfiles
-
 ## What Is This?
 
 This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything which is needed to install my preffered setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
