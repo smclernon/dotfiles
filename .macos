@@ -294,6 +294,10 @@ defaults write com.apple.ical "first minute of work hours" 540
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# DARK THEME ON
+# Mojave Dark Mode On (false) Off (true)
+defaults write -g NSRequiresAquaSystemAppearance -bool true
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
